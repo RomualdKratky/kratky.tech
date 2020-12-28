@@ -8,7 +8,7 @@ module.exports = {
       name: `Romuald Kratky`,
       photo: 'rk.jpg',
       bio:
-        'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+        'Web Developer | Problem Solver | Father of 2 | Triathlete | Sport Enthusiast',
       contacts: {
         linkedin: '#',
         xing: '#',

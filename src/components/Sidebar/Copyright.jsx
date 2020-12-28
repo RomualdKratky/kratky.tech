@@ -1,10 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const ContainerStyled = styled.div`
+  color: var(--lightgrey);
+`;
 
 const Copyright = ({ copyright }) => (
-  <div>
+  <ContainerStyled>
     © {new Date().getFullYear()}, {copyright}
-  </div>
+  </ContainerStyled>
 );
 
 Copyright.propTypes = {

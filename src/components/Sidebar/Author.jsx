@@ -9,6 +9,9 @@ const ContainerStyled = styled.div`
   h1 {
     margin-top: 1rem;
   }
+  p {
+    color: var(--grey);
+  }
 `;
 
 const LinkStyled = styled(Link)`
