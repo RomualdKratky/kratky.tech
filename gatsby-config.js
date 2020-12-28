@@ -1,10 +1,38 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `kratky.tech`,
+    siteUrl: `https://kratky.tech`,
+    description: `Personal website of Romuald Kratky - kratky.tech`,
+    copyright: 'All rights reserved.',
+    author: {
+      name: `Romuald Kratky`,
+      photo: 'rk.jpg',
+      bio:
+        'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+      contacts: {
+        linkedin: '#',
+        xing: '#',
+        email: 'mailto:romuald@kratky.tech',
+        github: '#',
+      },
+    },
+    menu: [
+      {
+        label: 'Home',
+        path: '/',
+      },
+      {
+        label: 'About me',
+        path: '/about',
+      },
+      {
+        label: 'Contact me',
+        path: '/contact',
+      },
+    ],
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,4 +59,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

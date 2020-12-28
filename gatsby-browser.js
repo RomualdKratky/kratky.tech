@@ -1,7 +1,7 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+/* eslint-disable react/jsx-props-no-spreading, react/jsx-filename-extension */
+import React from 'react';
+import Layout from './src/components/Layout';
 
-// You can delete this file if you're not using it
+export function wrapPageElement({ element, props }) {
+  return <Layout {...props}>{element}</Layout>;
+}
