@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `kratky.tech`,
     siteUrl: `https://kratky.tech`,
-    description: `Persönliche Webseite von Romuald Kratky - kratky.tech`,
+    description: `Personal Website of Romuald Kratky - kratky.tech`,
     copyright: 'Alle Rechte vorbehalten.',
     author: {
       name: `Romuald Kratky`,
@@ -46,12 +46,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `kratky.tech`,
+        short_name: `kratky.tech`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        background_color: `#b6b6b6`,
+        theme_color: `#b6b6b6`,
+        display: `standalone`,
         icon: `src/images/android-chrome-512x512.png`, // This path is relative to the root of the site.
       },
     },
@@ -81,7 +81,7 @@ module.exports = {
         // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: 'kratky.tech',
+        cookieDomain: 'www.kratky.tech',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

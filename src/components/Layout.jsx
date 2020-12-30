@@ -32,7 +32,7 @@ const MainStyled = styled.main`
   flex: 1;
   padding: 3rem 2rem;
   @media (max-width: ${MIN_WIDTH}) {
-    padding: 0rem 2rem;
+    padding: 0rem 2rem 3rem 2rem;
   }
 `;
 
