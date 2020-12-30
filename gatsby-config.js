@@ -2,18 +2,18 @@ module.exports = {
   siteMetadata: {
     title: `kratky.tech`,
     siteUrl: `https://kratky.tech`,
-    description: `Personal website of Romuald Kratky - kratky.tech`,
-    copyright: 'All rights reserved.',
+    description: `Persönliche Webseite von Romuald Kratky - kratky.tech`,
+    copyright: 'Alle Rechte vorbehalten.',
     author: {
       name: `Romuald Kratky`,
       photo: 'rk.jpg',
       bio:
-        'Web Developer | Problem Solver | Father of 2 | Triathlete | Sport Enthusiast',
+        'Web Developer | Problemlöser | Vater von 2 | Triathlet | Sport Enthusiast',
       contacts: {
-        linkedin: '#',
-        xing: '#',
+        linkedin: 'https://www.linkedin.com/in/romuald-kratky-b36243170/',
+        xing: 'https://www.xing.com/profile/Romuald_Kratky',
         email: 'mailto:romuald@kratky.tech',
-        github: '#',
+        github: 'https://github.com/RomualdKratky',
       },
     },
     menu: [
@@ -22,11 +22,11 @@ module.exports = {
         path: '/',
       },
       {
-        label: 'About me',
+        label: 'Über mich',
         path: '/about',
       },
       {
-        label: 'Contact me',
+        label: 'Kontakt',
         path: '/contact',
       },
     ],
@@ -52,7 +52,36 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/android-chrome-512x512.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: 'G-R765QHVP3H',
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ['/preview/**', '/do-not-track/me/too/'],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Enables Google Optimize using your container Id
+        // optimizeId: 'YOUR_GOOGLE_OPTIMIZE_TRACKING_ID',
+        // Enables Google Optimize Experiment ID
+        // experimentId: 'YOUR_GOOGLE_EXPERIMENT_ID',
+        // Set Variation ID. 0 for original 1,2,3....
+        // variationId: 'YOUR_GOOGLE_OPTIMIZE_VARIATION_ID',
+        // Defers execution of google analytics script after page load
+        defer: false,
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: 'kratky.tech',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

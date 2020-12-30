@@ -15,8 +15,9 @@ const ContainerStyled = styled.div`
 `;
 
 const LinkStyled = styled(Link)`
+  color: var(--black);
   :hover {
-    color: initial;
+    color: var(--black);
   }
 `;
 

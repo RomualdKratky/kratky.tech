@@ -31,21 +31,17 @@ const SidebarStyles = styled.div`
     }
   }
 `;
-const Sidebar = ({ isIndex }) => {
+const Sidebar = () => {
   const { author, copyright, menu } = useSiteMetadata();
 
   return (
     <SidebarStyles>
-      <Author author={author} isIndex={isIndex} />
+      <Author author={author} />
       <Menu menu={menu} />
       <Contacts contacts={author.contacts} />
       <Copyright copyright={copyright} />
     </SidebarStyles>
   );
-};
-
-Sidebar.propTypes = {
-  isIndex: PropTypes.bool.isRequired,
 };
 
 export default Sidebar;

@@ -13,14 +13,27 @@ const Typography = createGlobalStyle`
     margin: 0;
   }
   a {
-    color: var(--black);
+    color: var(--blue);
     text-decoration: none;
     :hover{
-      color: var(--blue);
+      color: var(--darkblue);
     }
     &.active{
       color: var(--blue);
       text-decoration: underline;
+    }
+  }
+  nav{
+    a {
+      color: var(--black);
+      text-decoration: none;
+      :hover{
+        color: var(--blue);
+      }
+      &.active{
+        color: var(--blue);
+        text-decoration: underline;
+      }
     }
   }
 `;

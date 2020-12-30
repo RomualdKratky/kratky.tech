@@ -22,13 +22,18 @@ const ContentStyled = styled.div`
 
 const SidebarStyled = styled.div`
   max-width: 32rem;
-  flex: 1 1 28rem;
+  /* flex: 1 1 28rem; */
   margin-right: 3rem;
 `;
 
 const MainStyled = styled.main`
-  flex: 1 1 28rem;
+  /* flex: 1 1 28rem; */
+  min-width: 32rem;
+  flex: 1;
   padding: 3rem 2rem;
+  @media (max-width: ${MIN_WIDTH}) {
+    padding: 0rem 2rem;
+  }
 `;
 
 const Layout = ({ children }) => (
