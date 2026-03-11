@@ -10,10 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return routing.locales.flatMap((locale) =>
     pages.map((page) => ({
       url: `${siteConfig.url}/${locale}${page}/`,
-      // Use BUILD_DATE env var when set (CI); fall back to build time.
-      lastModified: process.env.BUILD_DATE
-        ? new Date(process.env.BUILD_DATE)
-        : new Date(),
+      lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: page === "" ? 1 : 0.5,
     })),

@@ -25,7 +25,6 @@ jobs:
       - run: npm run verify
         env:
           NEXT_PUBLIC_CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
-          BUILD_DATE: ${{ github.event.repository.pushed_at }}
 
   deploy:
     needs: verify
@@ -44,7 +43,6 @@ jobs:
       - run: npm run build
         env:
           NEXT_PUBLIC_CF_ANALYTICS_TOKEN: ${{ secrets.CF_ANALYTICS_TOKEN }}
-          BUILD_DATE: ${{ github.event.repository.pushed_at }}
 
       - uses: Azure/static-web-apps-deploy@v1
         with:
