@@ -1,0 +1,153 @@
+{
+  "nav": {
+    "experience": "Experience",
+    "services": "Services",
+    "skills": "Tech Stack",
+    "contact": "Contact",
+    "impressum": "Imprint",
+    "datenschutz": "Privacy"
+  },
+  "hero": {
+    "role": "Senior Software Architect & Full-Stack Developer",
+    "tagline": "Senior Expertise meets AI-Speed.",
+    "subtitle": "20+ years building mission-critical systems. Now delivering at startup velocity.",
+    "cta": "Get in Touch"
+  },
+  "trustedBy": {
+    "ersteGroup": "Erste Group",
+    "brz": "BRZ (Federal Computing Centre)",
+    "railCargo": "Rail Cargo Austria / ÖBB",
+    "kassandro": "Kassandro",
+    "itPark": "it-park Service und Technologie",
+    "dataPad": "dataPad",
+    "reinisch": "Reinisch"
+  },
+  "aiEdge": {
+    "title": "Senior Expertise. Startup Speed.",
+    "card1Title": "Rapid MVP & Prototyping",
+    "card1Body": "I deliver production-ready MVPs in days, not months. AI-augmented workflows cut waste — you get working software fast, built on solid architectural foundations from day one.",
+    "card2Title": "Enterprise Architecture & Scale",
+    "card2Body": "I scale systems that millions rely on. 20+ years hardening architectures for Erste Group and BRZ — secure by design, built to last, and ready for whatever comes next.",
+    "card3Title": "Legacy Modernization & AI-Bridge",
+    "card3Body": "I bridge legacy and modern — without the big-bang rewrites that kill projects. I modernize incrementally, integrate AI workflows, and turn technical debt into competitive advantage."
+  },
+  "experience": {
+    "title": "Experience",
+    "ersteDigital": {
+      "role": "Senior Frontend Developer",
+      "company": "Erste Digital",
+      "period": "2022 – Present",
+      "description": "Lead frontend development on creditLab — Erste Group's corporate credit intelligence platform. React/TypeScript/Vite stack, API integration, Node.js backend for complex PDF generation, Jenkins CI/CD.",
+      "highlights": {
+        "leadFrontend": "Lead Frontend Development",
+        "reactTypescriptVite": "React / TypeScript / Vite",
+        "apiIntegration": "API Integration",
+        "nodejsPdf": "Node.js PDF Generation",
+        "jenkins": "Jenkins CI/CD",
+        "ecp": "ECP Platform"
+      }
+    },
+    "freelance": {
+      "role": "Freelance Software Architect & Consultant",
+      "company": "Self-Employed",
+      "period": "2018 – Present",
+      "description": "Consulting and development of tailored software solutions for companies across various industries.",
+      "highlights": {
+        "react": "React & React Native",
+        "typescript": "TypeScript",
+        "nodejs": "Node.js",
+        "consulting": "Technical Consulting"
+      }
+    },
+    "brz": {
+      "role": "Senior Software Developer",
+      "company": "Federal Computing Centre (BRZ)",
+      "period": "2012 – 2018",
+      "description": "Development and maintenance of mission-critical applications for the Austrian federal administration.",
+      "highlights": {
+        "govtech": "Gov-Tech",
+        "missionCritical": "Mission-Critical",
+        "security": "Security",
+        "largeScale": "Large-Scale Systems"
+      }
+    },
+    "banking": {
+      "role": "Software Developer",
+      "company": "Banking Sector",
+      "period": "2005 – 2012",
+      "description": "Development of financial applications with the highest demands on availability and compliance.",
+      "highlights": {
+        "fintech": "FinTech",
+        "compliance": "Compliance",
+        "highAvailability": "High Availability"
+      }
+    },
+    "earlyCareer": {
+      "role": "Web Developer",
+      "company": "Various Companies",
+      "period": "2000 – 2005",
+      "description": "Building the foundations in web development and full-stack technologies.",
+      "highlights": {
+        "webDev": "Web Development",
+        "fullstack": "Full-Stack",
+        "foundations": "Foundations"
+      }
+    }
+  },
+  "skills": {
+    "title": "Tech Stack",
+    "categories": {
+      "frontendArchitecture": "Frontend Architecture",
+      "backendScale": "Backend & Scale",
+      "aiModernDev": "AI & Modern Dev"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "availability": "Availability for projects on request.",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "Vienna, Austria",
+    "connect": "Connect with me"
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "madeWith": "Built with Next.js",
+    "privacyNote": "Privacy First. No Cookies. Built in Vienna with Claude. 🇦🇹"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The requested page does not exist.",
+    "back": "Back to Home"
+  },
+  "impressum": {
+    "title": "Imprint",
+    "businessSubject": "Business subject: IT Services",
+    "membership": "Member of the Professional Group for Business Consulting and Information Technology.",
+    "jurisdiction": "Jurisdiction: Vienna",
+    "uid": "VAT ID",
+    "legalBasis": "Legal Basis",
+    "legalRef": "§ 24 Austrian Media Act (MedienG)",
+    "wko": "WKO.at",
+    "contact": "Contact",
+    "email": "Email"
+  },
+  "datenschutz": {
+    "title": "Privacy Policy",
+    "infoTitle": "Information Obligation Statement",
+    "intro": "The protection of your personal data is of particular concern to us. We therefore process your data exclusively on the basis of legal provisions (GDPR, TKG 2021). In this privacy policy, we inform you about the most important aspects of data processing within our website.",
+    "visitTitle": "Data Processing When Visiting the Website",
+    "visitText": "When visiting our website, your IP address and the start and end of your session are recorded for the duration of the session. This is technically necessary and constitutes a legitimate interest within the meaning of Art. 6 para. 1 lit. f GDPR. This data is not further processed by us and is automatically deleted after the session ends.",
+    "contactTitle": "Contact with Us",
+    "contactText": "If you contact us by email, your provided data will be stored for the purpose of processing the request and in case of follow-up questions for six months. We will not share this data without your consent.",
+    "analyticsTitle": "Web Analytics",
+    "analyticsText1": "Our website uses Cloudflare Web Analytics. This is a privacy-friendly analytics solution that, unlike conventional tools, completely avoids the use of cookies. No cross-website tracking takes place (no \"fingerprinting\").",
+    "analyticsText2": "Only aggregated, anonymised usage statistics are collected (e.g. which pages were visited or which browser type was used) to optimise the technical stability and performance of the site. No personal data or IP addresses are permanently stored.",
+    "hostingTitle": "Hosting",
+    "hostingText": "We host our website with Microsoft Azure (Microsoft Ireland Operations Ltd.). To provide the website, the host collects technically necessary log files. The processing is based on our legitimate interest in the technically sound and secure operation of our website in accordance with Art. 6 para. 1 lit. f GDPR.",
+    "rightsTitle": "Your Rights",
+    "rightsText": "You generally have the rights of access, rectification, deletion, restriction, data portability, revocation and objection regarding your data stored with us. If you believe that the processing of your data violates data protection law or your data protection rights have otherwise been infringed, you can lodge a complaint with us (office@kratky.tech) or the data protection authority.",
+    "contactDetailsTitle": "Contact Details",
+    "austria": "Austria"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "nav": {
+    "experience": "Erfahrung",
+    "services": "Leistungen",
+    "skills": "Tech Stack",
+    "contact": "Kontakt",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz"
+  },
+  "hero": {
+    "role": "Senior Software Architect & Full-Stack Developer",
+    "tagline": "Senior-Expertise trifft KI-Tempo.",
+    "subtitle": "20+ Jahre missionskritische Systeme. Jetzt mit Startup-Geschwindigkeit.",
+    "cta": "Kontakt aufnehmen"
+  },
+  "trustedBy": {
+    "ersteGroup": "Erste Group",
+    "brz": "Bundesrechenzentrum (BRZ)",
+    "railCargo": "Rail Cargo Austria / ÖBB",
+    "kassandro": "Kassandro",
+    "itPark": "it-park Service und Technologie",
+    "dataPad": "dataPad",
+    "reinisch": "Reinisch"
+  },
+  "aiEdge": {
+    "title": "Senior-Expertise. Startup-Tempo.",
+    "card1Title": "Rapid MVP & Prototyping",
+    "card1Body": "Ich liefere produktionsreife MVPs in Tagen, nicht Monaten. KI-gestützte Workflows eliminieren Verschwendung — funktionierende Software schnell, auf soliden architektonischen Grundlagen ab Tag eins.",
+    "card2Title": "Enterprise-Architektur & Skalierung",
+    "card2Body": "Ich skaliere Systeme, auf die Millionen vertrauen. 20+ Jahre Architektur-Härtung für Erste Group und BRZ — sicher by Design, zukunftssicher und bereit für alles.",
+    "card3Title": "Legacy-Modernisierung & KI-Bridge",
+    "card3Body": "Ich überbrücke Legacy und Modern — ohne Big-Bang-Rewrites, die Projekte zerstören. Inkrementelle Modernisierung, KI-Integration und technische Schulden als Wettbewerbsvorteil."
+  },
+  "experience": {
+    "title": "Erfahrung",
+    "ersteDigital": {
+      "role": "Senior Frontend Developer",
+      "company": "Erste Digital",
+      "period": "2022 – Heute",
+      "description": "Lead-Frontend-Entwicklung für creditLab — die Corporate Credit Intelligence Plattform der Erste Group. React/TypeScript/Vite Stack, API-Integration, Node.js Backend für komplexe PDF-Generierung, Jenkins CI/CD.",
+      "highlights": {
+        "leadFrontend": "Lead Frontend Entwicklung",
+        "reactTypescriptVite": "React / TypeScript / Vite",
+        "apiIntegration": "API-Integration",
+        "nodejsPdf": "Node.js PDF-Generierung",
+        "jenkins": "Jenkins CI/CD",
+        "ecp": "ECP-Plattform"
+      }
+    },
+    "freelance": {
+      "role": "Freelance Software Architect & Consultant",
+      "company": "Selbstständig",
+      "period": "2018 – Heute",
+      "description": "Beratung und Entwicklung maßgeschneiderter Softwarelösungen für Unternehmen verschiedener Branchen.",
+      "highlights": {
+        "react": "React & React Native",
+        "typescript": "TypeScript",
+        "nodejs": "Node.js",
+        "consulting": "Technische Beratung"
+      }
+    },
+    "brz": {
+      "role": "Senior Software Developer",
+      "company": "Bundesrechenzentrum (BRZ)",
+      "period": "2012 – 2018",
+      "description": "Entwicklung und Wartung missionskritischer Anwendungen für die österreichische Bundesverwaltung.",
+      "highlights": {
+        "govtech": "Gov-Tech",
+        "missionCritical": "Missionskritisch",
+        "security": "Sicherheit",
+        "largeScale": "Großsysteme"
+      }
+    },
+    "banking": {
+      "role": "Software Developer",
+      "company": "Bankensektor",
+      "period": "2005 – 2012",
+      "description": "Entwicklung von Finanzanwendungen mit höchsten Anforderungen an Verfügbarkeit und Compliance.",
+      "highlights": {
+        "fintech": "FinTech",
+        "compliance": "Compliance",
+        "highAvailability": "Hochverfügbarkeit"
+      }
+    },
+    "earlyCareer": {
+      "role": "Web Developer",
+      "company": "Diverse Unternehmen",
+      "period": "2000 – 2005",
+      "description": "Aufbau der Grundlagen in Webentwicklung und Full-Stack-Technologien.",
+      "highlights": {
+        "webDev": "Webentwicklung",
+        "fullstack": "Full-Stack",
+        "foundations": "Grundlagen"
+      }
+    }
+  },
+  "skills": {
+    "title": "Tech Stack",
+    "categories": {
+      "frontendArchitecture": "Frontend-Architektur",
+      "backendScale": "Backend & Skalierung",
+      "aiModernDev": "KI & Modernes Dev"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "availability": "Verfügbarkeit für Projekte auf Anfrage.",
+    "email": "E-Mail",
+    "location": "Standort",
+    "locationValue": "Wien, Österreich",
+    "connect": "Vernetzen Sie sich"
+  },
+  "footer": {
+    "copyright": "Alle Rechte vorbehalten.",
+    "madeWith": "Gebaut mit Next.js",
+    "privacyNote": "Privacy First. Keine Cookies. Gebaut in Wien mit Claude. 🇦🇹"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die angeforderte Seite existiert nicht.",
+    "back": "Zur Startseite"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "businessSubject": "Unternehmensgegenstand: IT-Dienstleistungen",
+    "membership": "Mitglied der Fachgruppe Unternehmensberatung und Informationstechnologie.",
+    "jurisdiction": "Gerichtsstand: Wien",
+    "uid": "UID-Nummer",
+    "legalBasis": "Rechtsgrundlagen",
+    "legalRef": "§ 24 Mediengesetz (MedienG)",
+    "wko": "WKO.at",
+    "contact": "Kontakt",
+    "email": "Email"
+  },
+  "datenschutz": {
+    "title": "Datenschutz",
+    "infoTitle": "Erklärung zur Informationspflicht",
+    "intro": "Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2021). In diesen Datenschutzinformationen informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Website.",
+    "visitTitle": "Datenverarbeitung beim Website-Besuch",
+    "visitText": "Beim Besuch unserer Webseite wird Ihre IP-Adresse sowie Beginn und Ende der Sitzung für die Dauer dieser Sitzung erfasst. Dies ist technisch bedingt und stellt damit ein berechtigtes Interesse im Sinne des Art. 6 Abs. 1 lit. f DSGVO dar. Diese Daten werden von uns nicht weiterverarbeitet und nach Ende der Sitzung automatisch gelöscht.",
+    "contactTitle": "Kontakt mit uns",
+    "contactText": "Wenn Sie per E-Mail Kontakt mit uns aufnehmen, werden Ihre angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen sechs Monate bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+    "analyticsTitle": "Web Analytics",
+    "analyticsText1": "Unsere Website verwendet Cloudflare Web Analytics. Dies ist eine datenschutzfreundliche Analyselösung, die im Gegensatz zu herkömmlichen Tools vollständig auf den Einsatz von Cookies verzichtet. Es findet kein Tracking über verschiedene Websites hinweg statt (kein \"Fingerprinting\").",
+    "analyticsText2": "Es werden lediglich aggregierte, anonymisierte Nutzungsstatistiken erfasst (z.B. welche Seiten aufgerufen wurden oder welcher Browsertyp verwendet wurde), um die technische Stabilität und Performance der Seite zu optimieren. Es werden dabei keine personenbezogenen Daten oder IP-Adressen dauerhaft gespeichert.",
+    "hostingTitle": "Hosting",
+    "hostingText": "Wir hosten unsere Website bei Microsoft Azure (Microsoft Ireland Operations Ltd.). Zur Bereitstellung der Website erfasst der Hoster technisch notwendige Logfiles. Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses an einem technisch einwandfreien und sicheren Betrieb unserer Website gemäß Art. 6 Abs. 1 lit. f DSGVO.",
+    "rightsTitle": "Ihre Rechte",
+    "rightsText": "Ihnen stehen bezüglich Ihrer bei uns gespeicherten Daten grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich bei uns (office@kratky.tech) oder der Datenschutzbehörde beschweren.",
+    "contactDetailsTitle": "Kontaktdaten",
+    "austria": "Österreich"
+  }
+}

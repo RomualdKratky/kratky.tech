@@ -1,0 +1,17 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="k" x1="10" y1="6" x2="23" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Flat dark background -->
+  <rect width="32" height="32" rx="7" fill="#0f172a"/>
+  <!-- Subtle cyan border -->
+  <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" stroke="#22d3ee" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- K as clean filled shape -->
+  <path d="M10 7 h4 v5 l9-5 v4.5 l-7.5 4.5 7.5 4.5 v4.5 l-9-5 v5 h-4 Z" fill="url(#k)"/>
+</svg>
