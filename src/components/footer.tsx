@@ -14,9 +14,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {siteConfig.author.name}.{" "}
             {t("copyright")}
           </p>
-          <p className="text-xs text-muted/70 tracking-wide">
-            {t("privacyNote")}
-          </p>
+          <p className="text-xs text-muted tracking-wide">{t("privacyNote")}</p>
         </div>
         <SocialLinks size={18} />
       </Container>

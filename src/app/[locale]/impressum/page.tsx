@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { siteConfig } from "@/data/site";
 import { LegalPageWrapper } from "@/components/ui/legal-page";
+import { getCanonicalUrl } from "@/lib/url";
 
 export async function generateMetadata({
   params,
@@ -12,14 +12,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "impressum" });
-  const isDE = locale === "de";
   return {
     title: t("title"),
-    description: isDE
-      ? "Impressum der Kratky Tech KG — Angaben gemäß § 24 Mediengesetz."
-      : "Legal imprint of Kratky Tech KG — details pursuant to § 24 Austrian Media Act.",
+    description: t("metaDescription"),
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://kratky.tech"}/${locale}/impressum/`,
+      canonical: getCanonicalUrl(locale, "/impressum/"),
     },
   };
 }

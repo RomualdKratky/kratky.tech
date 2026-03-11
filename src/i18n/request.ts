@@ -1,12 +1,5 @@
 import { getRequestConfig } from "next-intl/server";
-import { routing } from "./routing";
-
-/** Type guard — narrows an unknown string to a valid locale. */
-function isValidLocale(
-  locale: string,
-): locale is (typeof routing.locales)[number] {
-  return (routing.locales as readonly string[]).includes(locale);
-}
+import { routing, isValidLocale } from "./routing";
 
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
@@ -17,6 +10,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
+    // Dynamic import ensures each locale's JSON is only bundled when that
+    // locale is actually requested — required by next-intl's server-side
+    // message loading model.
     messages: (await import(`../messages/${locale}.json`)).default,
   };
 });

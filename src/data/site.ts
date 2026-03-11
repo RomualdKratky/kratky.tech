@@ -25,6 +25,13 @@ export const siteConfig = {
   analytics: {
     cfToken: process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN ?? "",
   },
+  /** Static content for the OpenGraph image (always rendered in English). */
+  og: {
+    /** Short display name without academic title, for the OG image heading. */
+    name: "Romuald Kratky",
+    tagline: "Senior Expertise meets AI-Speed.",
+    locationBlurb: "Vienna, Austria · 20+ years of mission-critical systems",
+  },
 } as const;
 
 /** Logo marquee items — keys map to `trustedBy.*` translation keys.
@@ -34,14 +41,14 @@ export const siteConfig = {
 export const trustedByItems = [
   {
     key: "brz",
-    logo: "/logos/brz.png",
+    logo: "/logos/brz.webp",
     padded: true,
     pillDark: false,
     height: "h-7",
   },
   {
     key: "dataPad",
-    logo: "/logos/datapad.png",
+    logo: "/logos/datapad.webp",
     padded: false,
     pillDark: true,
     height: "h-10",
@@ -55,14 +62,14 @@ export const trustedByItems = [
   },
   {
     key: "itPark",
-    logo: "/logos/itpark.jpg",
+    logo: "/logos/itpark.webp",
     padded: true,
     pillDark: false,
     height: "h-7",
   },
   {
     key: "kassandro",
-    logo: "/logos/kassandro.png",
+    logo: "/logos/kassandro.webp",
     padded: false,
     pillDark: true,
     height: "h-7",
@@ -76,7 +83,7 @@ export const trustedByItems = [
   },
   {
     key: "reinisch",
-    logo: "/logos/reinisch.png",
+    logo: "/logos/reinisch.webp",
     padded: true,
     pillDark: false,
     height: "h-9",

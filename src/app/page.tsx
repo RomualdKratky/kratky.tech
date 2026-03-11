@@ -1,6 +1,23 @@
-import { redirect } from "next/navigation";
-import { routing } from "@/i18n/routing";
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { routing, isValidLocale } from "@/i18n/routing";
+import { getStoredLocale } from "@/lib/locale-storage";
 
 export default function RootPage() {
-  redirect(`/${routing.defaultLocale}/`);
+  const router = useRouter();
+
+  useEffect(() => {
+    const stored = getStoredLocale();
+    const locale =
+      (stored && isValidLocale(stored) ? stored : null) ??
+      routing.locales.find((l) =>
+        navigator.language.toLowerCase().startsWith(l),
+      ) ??
+      routing.defaultLocale;
+    router.replace(`/${locale}/`);
+  }, [router]);
+
+  return null;
 }

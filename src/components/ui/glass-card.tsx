@@ -1,3 +1,10 @@
+/**
+ * Card with glass-morphism styling (frosted background, subtle border).
+ * Use `hover` for interactive cards — adds an accent border and shadow lift on hover.
+ *
+ * @example
+ * <GlassCard hover className="p-8">...</GlassCard>
+ */
 interface GlassCardProps {
   children: React.ReactNode;
   className?: string;

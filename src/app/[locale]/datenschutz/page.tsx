@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { siteConfig } from "@/data/site";
 import { LegalPageWrapper } from "@/components/ui/legal-page";
+import { getCanonicalUrl } from "@/lib/url";
 
 export async function generateMetadata({
   params,
@@ -12,14 +12,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "datenschutz" });
-  const isDE = locale === "de";
   return {
     title: t("title"),
-    description: isDE
-      ? "Datenschutzerklärung der Kratky Tech KG gemäß DSGVO und TKG 2021."
-      : "Privacy policy of Kratky Tech KG pursuant to GDPR and TKG 2021.",
+    description: t("metaDescription"),
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://kratky.tech"}/${locale}/datenschutz/`,
+      canonical: getCanonicalUrl(locale, "/datenschutz/"),
     },
   };
 }

@@ -122,6 +122,7 @@
   },
   "impressum": {
     "title": "Imprint",
+    "metaDescription": "Legal imprint of Kratky Tech KG — details pursuant to § 24 Austrian Media Act.",
     "businessSubject": "Business subject: IT Services",
     "membership": "Member of the Professional Group for Business Consulting and Information Technology.",
     "jurisdiction": "Jurisdiction: Vienna",
@@ -134,6 +135,7 @@
   },
   "datenschutz": {
     "title": "Privacy Policy",
+    "metaDescription": "Privacy policy of Kratky Tech KG pursuant to GDPR and TKG 2021.",
     "infoTitle": "Information Obligation Statement",
     "intro": "The protection of your personal data is of particular concern to us. We therefore process your data exclusively on the basis of legal provisions (GDPR, TKG 2021). In this privacy policy, we inform you about the most important aspects of data processing within our website.",
     "visitTitle": "Data Processing When Visiting the Website",

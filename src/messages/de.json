@@ -122,6 +122,7 @@
   },
   "impressum": {
     "title": "Impressum",
+    "metaDescription": "Impressum der Kratky Tech KG — Angaben gemäß § 24 Mediengesetz.",
     "businessSubject": "Unternehmensgegenstand: IT-Dienstleistungen",
     "membership": "Mitglied der Fachgruppe Unternehmensberatung und Informationstechnologie.",
     "jurisdiction": "Gerichtsstand: Wien",
@@ -134,6 +135,7 @@
   },
   "datenschutz": {
     "title": "Datenschutz",
+    "metaDescription": "Datenschutzerklärung der Kratky Tech KG gemäß DSGVO und TKG 2021.",
     "infoTitle": "Erklärung zur Informationspflicht",
     "intro": "Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2021). In diesen Datenschutzinformationen informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Website.",
     "visitTitle": "Datenverarbeitung beim Website-Besuch",

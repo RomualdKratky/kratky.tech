@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   description:
     "Senior Software Architect with 20+ years of experience. Specializing in React, TypeScript, Node.js. Based in Vienna, Austria.",
-  metadataBase: new URL(siteConfig.url),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url),
   alternates: {
     languages: {
       de: `${siteConfig.url}/de/`,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/rk.jpg",
+        url: "/opengraph-image/",
         width: 1200,
         height: 630,
         alt: `${siteConfig.author.name} — ${siteConfig.author.role}`,
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: `${siteConfig.author.name} | ${siteConfig.author.role}`,
     description:
       "Senior Software Architect with 20+ years of experience building mission-critical systems.",
-    images: ["/rk.jpg"],
+    images: ["/opengraph-image/"],
   },
 };
 

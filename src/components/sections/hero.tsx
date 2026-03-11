@@ -8,6 +8,17 @@ import { SocialLinks } from "@/components/ui/social-links";
 import { Container } from "@/components/ui/container";
 import { ClientLogo } from "@/components/ui/client-logo";
 
+/**
+ * Duplicates each item with a "set" tag ("a" | "b") for the seamless CSS marquee loop.
+ * The "b" set is an identical visual copy; it's hidden from assistive technology
+ * via aria-hidden so screen readers only encounter each logo once.
+ */
+function withMarqueeSets<T>(items: readonly T[]) {
+  return (["a", "b"] as const).flatMap((set) =>
+    items.map((item) => ({ ...item, set })),
+  );
+}
+
 export function HeroSection() {
   const t = useTranslations("hero");
   const tTrusted = useTranslations("trustedBy");
@@ -47,7 +58,7 @@ export function HeroSection() {
           <p className="text-lg sm:text-xl lg:text-2xl text-muted max-w-2xl leading-relaxed tracking-wide">
             {t("tagline")}
           </p>
-          <p className="text-base text-muted/70 max-w-xl leading-relaxed">
+          <p className="text-base text-muted max-w-xl leading-relaxed">
             {t("subtitle")}
           </p>
 
@@ -77,37 +88,33 @@ export function HeroSection() {
             ref={marqueeTrackRef}
             className="flex w-max animate-marquee hover:[animation-play-state:paused]"
           >
-            {(["a", "b"] as const)
-              .flatMap((set) =>
-                trustedByItems.map((item) => ({ ...item, set })),
-              )
-              .map((item) => (
-                <div
-                  key={`${item.key}-${item.set}`}
-                  // Hide the duplicate "b" set from screen readers — it is purely
-                  // visual for the seamless loop; "a" set provides the content.
-                  aria-hidden={item.set === "b" ? true : undefined}
-                  className="flex items-center px-10 py-5"
+            {withMarqueeSets(trustedByItems).map((item) => (
+              <div
+                key={`${item.key}-${item.set}`}
+                // Hide the duplicate "b" set from screen readers — it is purely
+                // visual for the seamless loop; "a" set provides the content.
+                aria-hidden={item.set === "b" ? true : undefined}
+                className="flex items-center px-10 py-5"
+              >
+                <span
+                  className={`inline-flex items-center rounded px-2 py-1 ${
+                    item.padded
+                      ? "bg-white/90 dark:bg-white/95"
+                      : item.pillDark
+                        ? "dark:bg-white/90"
+                        : ""
+                  }`}
                 >
-                  <span
-                    className={`inline-flex items-center rounded px-2 py-1 ${
-                      item.padded
-                        ? "bg-white/90 dark:bg-white/95"
-                        : item.pillDark
-                          ? "dark:bg-white/90"
-                          : ""
-                    }`}
-                  >
-                    <ClientLogo
-                      src={item.logo}
-                      label={tTrusted(item.key)}
-                      height={item.height}
-                      // First set loads eagerly (above fold); duplicate set is lazy.
-                      priority={item.set === "a"}
-                    />
-                  </span>
-                </div>
-              ))}
+                  <ClientLogo
+                    src={item.logo}
+                    label={tTrusted(item.key)}
+                    height={item.height}
+                    // First set loads eagerly (above fold); duplicate set is lazy.
+                    priority={item.set === "a"}
+                  />
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

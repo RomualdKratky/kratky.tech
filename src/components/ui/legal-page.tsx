@@ -1,8 +1,14 @@
-/** Shared outer chrome for legal pages (Impressum, Datenschutz). */
+import { Container } from "./container";
+
+/**
+ * Shared outer chrome for legal pages (Impressum, Datenschutz).
+ * Uses Container for consistent horizontal padding, then constrains the
+ * reading width to 3xl for comfortable long-form text.
+ */
 export function LegalPageWrapper({ children }: { children: React.ReactNode }) {
   return (
-    <div className="pt-32 pb-24 px-6">
-      <div className="max-w-3xl mx-auto">{children}</div>
-    </div>
+    <Container className="pt-32 pb-24">
+      <div className="max-w-3xl">{children}</div>
+    </Container>
   );
 }
