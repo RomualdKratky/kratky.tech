@@ -2,17 +2,24 @@
 
 import { useTheme } from "next-themes";
 import { Sun, Moon } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
+
+// useSyncExternalStore with a no-op subscribe + differing server/client snapshot
+// is the React 18 idiomatic way to detect "mounted" without a setState-in-effect.
+const useIsMounted = () =>
+  useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
 
 export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const mounted = useIsMounted();
 
-  // Avoid hydration mismatch — render nothing until client knows the theme.
-  useEffect(() => setMounted(true), []);
-
+  // Avoid hydration mismatch — render placeholder until client knows the theme.
   if (!mounted) {
-    return <div className="w-9 h-9" />;
+    return <div className="w-16 h-9" />;
   }
 
   const isDark = resolvedTheme === "dark";
